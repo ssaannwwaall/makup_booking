@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:makup_booking/CategoryDetails.dart';
+import 'package:makup_booking/Widgets/ScheduleAppointmentScreen.dart';
 
 import 'HomeScreen.dart';
 import 'SplashScreen.dart';
@@ -20,13 +22,15 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       //title: 'Vaccination',
-      home: SafeArea(
+      home: const SafeArea(
         child: Scaffold(
           body: SplashScreen(),
         ),
       ),
       routes: {
         HomeScreen.routeName: (ctx) => HomeScreen(),
+        CategoryDetails.routeName: (ctx) => CategoryDetails(),
+        ScheduleAppointmentScreen.routeName: (ctx) => ScheduleAppointmentScreen(),
       },
     );
   }

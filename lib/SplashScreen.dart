@@ -6,13 +6,15 @@ import 'HomeScreen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const routeName = "/SplashScreen";
+
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin{
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
   AnimationController? controller;
   Animation? animation;
 
@@ -56,8 +58,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
           Container(
             height: _hight * .7,
             width: _width * .7,
-            child: SvgPicture.asset(
-              'assets/images/logo.svg',
+            child: Image.asset(
+              'assets/images/logo.png',
             ),
           ),
         ],

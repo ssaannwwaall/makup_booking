@@ -25,18 +25,14 @@ class HomeCardCategory extends StatelessWidget {
             height: _hight * 0.7,
             width: _width,
             child: Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0),
-              ),
-              color: backgroundColor,
+              // shape: RoundedRectangleBorder(
+              //   borderRadius: BorderRadius.circular(10.0),
+              // ),
+              //color: backgroundColor,
              // color: Colors.transparent,
               borderOnForeground: true,
-              elevation: 2,
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                //child: SvgPicture.asset(_svgPicture),
-                child: Image.asset(_svgPicture),
-              ),
+              elevation: 0,
+              child: Image.asset(_svgPicture),
             ),
           ),
           Container(
